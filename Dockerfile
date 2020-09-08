@@ -1,4 +1,4 @@
-FROM quay.io/fluentd_elasticsearch/fluentd:v2.7.0
+FROM quay.io/fluentd_elasticsearch/fluentd:v3.0.4
 
 RUN apt-get update \
  && buildDeps="build-essential zlib1g-dev ruby-dev" \
