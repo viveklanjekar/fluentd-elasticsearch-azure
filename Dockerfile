@@ -3,7 +3,7 @@ FROM quay.io/fluentd_elasticsearch/fluentd:v3.0.4
 RUN apt-get update \
  && buildDeps="build-essential zlib1g-dev ruby-dev" \
  && apt-get install -y --no-install-recommends $buildDeps \
- && gem install fluent-plugin-azure-storage-append-blob --version 2.0.1 \
+ && gem install fluent-plugin-azure-storage-append-blob --version 0.2.1 \
  && gem install fluent-plugin-concat --version 2.4.0 \
  && gem install fluent-plugin-s3 --version 1.4.0 \
  && gem install fluent-plugin-kafka --version 0.14.2 \
