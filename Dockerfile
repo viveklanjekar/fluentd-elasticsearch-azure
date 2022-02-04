@@ -13,6 +13,7 @@ RUN apt-get update \
  && gem install fluent-plugin-detect-exceptions --version 0.0.13 \
  && gem install fluent-plugin-elasticsearch --version 4.1.3 \
  && gem install fluent-plugin-kubernetes_metadata_filter --version 2.5.2 \
+ && gem install fluent-plugin-parser-cri --version 0.1.1 \
  && gem install fluent-plugin-multi-format-parser --version 1.0.0 \
  && apt-get purge -y --auto-remove \
                   -o APT::AutoRemove::RecommendsImportant=false \
