@@ -8,6 +8,8 @@ RUN apt-get update \
  && gem install fluent-plugin-s3 --version 1.4.0 \
  && gem install fluent-plugin-kafka --version 0.14.2 \
  && gem install fluent-plugin-grok-parser --version 2.6.1 \
+ && gem install fluent-plugin-datadog \
+ && gem install fluent-plugin-throttle --version 0.0.5 \
  && gem install fluent-plugin-rewrite-tag-filter --version 2.3.0 \
  && gem install fluent-plugin-record-reformer --version 0.9.1 \
  && gem install fluent-plugin-detect-exceptions --version 0.0.13 \
